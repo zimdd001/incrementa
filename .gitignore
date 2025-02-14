@@ -1,4 +1,5 @@
-# Игнорируем временные файлы Unity
+
+# 🔹 Игнорируем временные файлы и кеш Unity
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -7,16 +8,13 @@
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
-# Папки кэша
+# 🔹 Кэширование и временные файлы Unity
 /[Mm]emoryCaptures/
 /[Rr]ecordings/
 
-# Автогенерируемые файлы Unity и Rider
-/[Aa]ssets/Plugins/Editor/JetBrains*
+# 🔹 Игнорируем автогенерируемые файлы IDE (Visual Studio, JetBrains Rider, MonoDevelop)
 .vs/
 .gradle/
-
-# Автогенерируемые файлы Visual Studio, Rider, MonoDevelop
 ExportedObj/
 .consulo/
 *.csproj
@@ -34,18 +32,18 @@ ExportedObj/
 *.opendb
 *.VC.db
 
-# Unity meta файлы
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
-
-# Файлы сборки
+# 🔹 Файлы билда и сборки (чтобы не заливать тяжелые apk, exe)
 *.apk
 *.aab
 *.unitypackage
 *.app
 
-# Адресуемые файлы Unity
+# 🔹 Исключаем файлы, связанные с Unity Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*  
+
+# 🔹 Файлы, специфичные для конкретных пользователей
+*.swp
+*.lock
+*.lock.json
